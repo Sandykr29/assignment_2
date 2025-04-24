@@ -20,3 +20,15 @@ console.log("Message 3");
 // Message 1
 // Message 3
 // Message 2 after 2 seconds
+
+// question 13 
+
+const loadingInterval = setInterval(() => {
+    console.log("Loading...");
+  }, 1000);
+  
+  // Stop logging after 5 seconds and print "Loaded successfully!"
+  setTimeout(() => {
+    clearInterval(loadingInterval);
+    console.log("Loaded successfully!");
+  }, 5000);
