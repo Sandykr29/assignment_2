@@ -32,3 +32,16 @@ const loadingInterval = setInterval(() => {
     clearInterval(loadingInterval);
     console.log("Loaded successfully!");
   }, 5000);
+
+//   q 14
+console.log("Begin");
+
+setTimeout(() => {
+  console.log("Timeout Task");
+}, 0);
+
+Promise.resolve().then(() => {
+  console.log("Promise Task");
+});
+
+console.log("End");
